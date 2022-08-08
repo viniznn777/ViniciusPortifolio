@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+:root {
+    --corDeFundoNav: #000015;
+    --colorLetter: orange;
+    --colorWhite: #fff;
+}
+
+/* NavBar */
+header {background-color: var(--corDeFundoNav);
+    box-shadow: 0 4px 4px 0 rgba(107, 104, 104, 0.3);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+    transition: all 0.4s;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo h1 {color: var(--colorLetter);}
+.logo a {text-decoration: none;}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+ul > li > a {position: relative;}
+ul > li > a::after {
+    content: '';
+    width: 0%;
+    height: 4px;
+    background-color: var(--colorLetter);
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    transition: 200ms ease-in-out;
+}
+ul > li > a:hover::after {width: 100%;}
+
+.nav-item {margin: 0 15px;}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: var(--colorLetter);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.mobile-menu-icon {display: none;}
+.mobile-menu {display: none;}
+
+@media screen and (max-width: 730px){
+    .navbar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        color: var(--colorLetter);
+        font-size: 27px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu {
+        margin-left: 120vw;
+        animation-duration: 0.5s;
+        overflow-x: hidden;
+    }
+    .open {display: block;}
+
+    @keyframes menuMobile {
+        from {
+            margin-left: 120vw;
+        }
+        top {
+            margin-left: 0;
+        }
+    }
+}
+

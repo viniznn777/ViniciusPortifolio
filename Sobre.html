@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./styles/Sobre/images/icons8-v-33.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/Home/NavBar.css">
+    <link rel="stylesheet" href="./styles/Sobre/Sobre.css">
+    <link rel="stylesheet" href="./styles/Modal/Modal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Vinícius | Sobre</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="./Home.html"><h1>Vinícius</h1></a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="./Home.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="./Sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="./Projetos.html" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" id="contactp">Contato</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()" id="btn">
+                    <i class="bi bi-list" id="icon"></i>    
+                </button>
+            </div>
+        </nav>
+        
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="./Home.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="./Sobre.html" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="./Projetos.html" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a class="nav-link" id="contact">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="image-container">
+            <img src="./styles/Sobre/images/unk.jpeg" alt="Me" draggable="false"
+            width="100%" height="100%" data-aos="fade-right" data-aos-duration="2000">
+        </div>
+        <div class="text-About-Container">
+            <div class="Text-About">
+                <p id="first">Olá me chamo Vinícius Kauã Augusto Barbosa, sou desenvolvedor front-end júnior, de Ribeirão Preto (SP) 
+                    atualmente cursando Análise e desenvolvimento de sistemas na (UNIFATECIE - PR)
+                    busco uma oportunidade de trabalho na área de Dev.Web.
+                    Estou buscando me qualificar ainda mais na área.
+                    Estarei prestando meu serviço e estou aberto a novos desafios, novos conhecimentos
+                    que me forem propostos.
+                </p>
+            </div>
+            
+        </div>
+    </main>
+    <div class="skills">
+        <h2>Habilidades</h2>
+        <div class="container-skills"
+        data-aos="flip-up"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="2000">
+            <img src="./styles/Sobre/images/icons8-html-5.svg" alt="HTML"
+            width="110px" height="110px" draggable="false">
+            <p><abbr title="Linguagem de Marcação de Hipertexto">
+                Html 5
+            </abbr> é uma linguagem de marcação utilizada na construção de páginas web.</p>
+        </div>
+        <div class="container-skills"
+        data-aos="flip-up"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="2000">
+            <img src="./styles/Sobre/images/icons8-css3.svg" alt="CSS"
+            width="110px" height="110px" draggable="false">
+            <p><abbr title="Cascading Style Sheets">
+                CSS
+            </abbr>Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web.</p>
+        </div>
+        <div class="container-skills"
+        data-aos="flip-up"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="2000">
+            <img src="./styles/Sobre/images/icons8-javascript.svg" alt="JAVASCRIPT"
+            width="110px" height="110px" draggable="false">
+            <p><abbr title="Linguagem de Script">
+                JavaScript
+            </abbr> é uma linguagem de programação interpretada estruturada, de script em alto nível.</p>
+        </div>
+        <div class="container-skills"
+        data-aos="flip-up"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="2000">
+            <img src="./styles/Sobre/images/icons8-python.svg" alt="PYTHON"
+            width="110px" height="110px" draggable="false">
+            <p><abbr title="Linguagem de Script">
+                Python
+            </abbr>Python é uma linguagem de programação de alto nível, interpretada de script.</p>
+        </div>
+        <div class="container-skills"
+        data-aos="flip-up"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="2000">
+            <img src="./styles/Sobre/images/icons8-react.svg" alt="REACT NONE"
+            width="110px" height="110px" draggable="false">
+            <p><abbr title="Biblioteca para JavaScript">
+                React.Js
+            </abbr><em>&nbsp;Studying...</em></p>
+        </div>
+    </div>
+    <div class="modal-container" id="modal-container">
+        <div class="modal">
+            <button class="fechar">X</button>
+            <h3>Links para contato</h3>
+            <div class="sociais">
+                <a href="https://github.com/viniznn777" target="_blank">
+                <button>
+                    <i class="bi bi-github"></i>
+                </button>
+                </a>
+                <a href="https://www.linkedin.com/in/viniciusdev/" target="_blank">
+                    <button>
+                        <i class="bi bi-linkedin"></i>
+                    </button>
+                </a>
+                <a href="https://www.instagram.com/viniznn.444/" target="_blank">
+                    <button>
+                        <i class="bi bi-instagram"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/NavBar.js"></script>
+    <script src="./scripts/Modal.js"></script>
+    <script src="./scripts/TypingText.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script>
+        AboutText(first)
+    </script>
+</body>
+</html>

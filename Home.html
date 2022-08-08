@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./styles/Home/images/icons8-v-33.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/Home/NavBar.css">
+    <link rel="stylesheet" href="./styles/Home/Home.css">
+    <link rel="stylesheet" href="./styles/Modal/Modal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Vinícius Kauã</title>
+</head>
+<body>
+    <!--NavBar-->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="./Home.html"><h1>Vinícius</h1></a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="./Home.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="./Sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="./Projetos.html" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" id="contactp">Contato</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()" id="btn">
+                    <i class="bi bi-list" id="icon"></i>    
+                </button>
+            </div>
+        </nav>
+        
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="./Home.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="./Sobre.html" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="./Projetos.html" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a class="nav-link" id="contact">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="left">
+            <div class="uptitle">
+                <h3 id="saudation">Seja Bem Vindo!</h3>
+            </div>
+            <div class="principal-title">
+                <h1 id="title">Olá sou,</h1>
+                <h1 id="title1">Vinícius Kauã!</h1>
+            </div>
+            <div class="cargo">
+                <h2 id="cargo">Desenvolvedor Front-End Júnior</h2>
+            </div>
+            <a href="../styles/Home/images/currículo.pdf" download  data-aos="fade-right"
+            data-aos-duration="1500">
+                <button>Download CV</button>
+            </a>
+        </section>
+        <section class="right">
+            <img src="./styles/Home/images/HandCoding.svg" alt="" width="100%" height="400px"
+            draggable="false" data-aos="fade-left" data-aos-duration="1300">
+        </section>
+    </main>
+    
+
+    <!--Modal Page-->
+    <div class="modal-container" id="modal-container">
+        <div class="modal">
+            <button class="fechar">X</button>
+            <h3>Links para contato</h3>
+            <div class="sociais">
+                <a href="https://github.com/viniznn777" target="_blank">
+                <button>
+                    <i class="bi bi-github"></i>
+                </button>
+                </a>
+                <a href="https://www.linkedin.com/in/viniciusdev/" target="_blank">
+                    <button>
+                        <i class="bi bi-linkedin"></i>
+                    </button>
+                </a>
+                <a href="https://www.instagram.com/viniznn.444/" target="_blank">
+                    <button>
+                        <i class="bi bi-instagram"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/NavBar.js"></script>
+    <script src="./scripts/Modal.js"></script>
+    <script src="./scripts/TypingText.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        typingSaudation(saudation)
+        typingTitle(title)
+        typingTitle(title1)
+        typingSaudation(cargo)
+    </script>
+</body>
+</html>
