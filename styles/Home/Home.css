@@ -1,107 +1,18 @@
-:root {
-    --corDeFundoNav: #000015;
-    --colorLetter: orange;
-    --colorWhite: #fff;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-main {
+div {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     display: flex;
-    flex-direction: row;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../Home/images/6173960.jpg);
-}
-
-.left {
-    width: 60%;
-    height: 100%;
-    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
-.right {
-    width: 50%;
-    height: 100%;
-    overflow-x: hidden;
+h1, p {
+    color: rgb(5, 1, 250);
+    font-family: Arial, Helvetica, sans-serif;
 }
-.right img {margin-top: 120px;}
-
-.uptitle, .principal-title, .cargo {width: 100%;margin-left: 20px;}
-
-.uptitle h3 {
-    font-size: 2.0rem;
-    color: rgb(62, 136, 248);
-}
-
-.principal-title h1 {
-    font-size: 4.3rem;
-    color: var(--colorLetter);
-    letter-spacing: 0.8rem;
-}
-
-.cargo {color: rgb(48, 127, 245);}
-
-.left a {width: 25%;}
-
-.left button {
-    padding: 17px;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: var(--corDeFundoNav);
-    color: var(--colorWhite);
-    border-radius: 25px;
-    cursor: pointer;
-    transition: 0.5s;
-    margin-left: 20px;
-}
-.left button:hover {
-    background-color: var(--colorLetter);
-    color: var(--corDeFundoNav);
-    border: 1px solid rgb(131, 95, 4);
-}
-
-.uptitle {margin-top: 80px;}
-.principal-title {margin-top: 30px;}
-.cargo {margin-top: 20px;margin-bottom: 18px;}
-
-::-webkit-scrollbar {background-color: var(--corDeFundoNav);width: 10px;}
-::-webkit-scrollbar-thumb {
-    background-color: var(--colorLetter);
-    border-radius: 50px;
-}
-
-@media screen and (max-width: 1195px){
-    .left a {width: 30%;}
-}
-@media screen and (max-width: 996px) {
-    .left a {width: 35%;}
-}
-@media screen and (max-width: 853px) {
-    .left a {width: 50%;}
-}
-@media screen and (max-width: 543px) {
-    .left a {width: 100%;}
-}
-@media screen and (max-width: 534px) {
-    .right {display: none;}
-    .left {width: 100%;}
-    .uptitle, .principal-title, .cargo {width: 100%;margin-left: 0px;}
-}
-@media screen and (max-width: 321px) {
-    #title, #title1 {font-size: 3.8rem;}
-}
-@media screen and (max-width: 297px) {
-    #title, #title1 {font-size: 3.2rem;}
-}
-@media screen and (max-width: 263px) {
-    #title, #title1 {font-size: 2.7rem;}
-}
-@media screen and (max-height: 600px) {
-    .cargo {margin-bottom: 10px;}
-}
-@media screen and (max-height: 568px) {
-    main {height: 100%;}
-    #title, #title1 {font-size: 2.7rem;}
-}
-
