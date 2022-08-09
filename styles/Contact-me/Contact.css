@@ -74,74 +74,89 @@ header button {
 /* Header */
 /* ----------------------------------------------------------------------------------------- */
 
-/* Conteúdo Principal */
-
 main {
     width: 100%;
     height: 100%;
     padding-left: 65px;
     padding-right: 65px;
     display: flex;
-    flex-direction: column;
-}
-main > .apresentation {
-    width: 100%;
-    height: 88vh;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow-y: hidden;
+    flex-direction: column;
 }
 
-/* Scroll Down  ===== */
-.apresentation img {
-    position: absolute;
-    margin-bottom: 20px;
-    bottom: 0;
-    transform: rotateZ(-40deg);
-    animation: ScrollDown 1.3s alternate infinite ease-in-out;
-}
-@keyframes ScrollDown {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(15px);
-    }
-}
-/* Scroll Down  ===== */
-
-main > .apresentation p {color: #2a20bd;font-size: 3.2rem;text-align: center;}
-main > .apresentation span {color: #ffffff;font-size: 3.5rem;text-align: center;}
-
-footer {
-    width: 100%;
-    height: 40px;
+form {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    width: 55%;
+}
+form h2 {
+    font-size: 1.9rem;
     color: #E3E4E6;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
+label {color: #ffffff;font-size: 1.2rem;margin-bottom: 12px;}
+form input[type="text"], input[type="email"] {
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    border-radius: 28px;
+    font-size: 1.1rem;
+    color: #ffffff;
+    background-color: #461cdf;
+    margin-bottom: 30px;
+}
+form input[type="text"]:hover, input[type="email"]:hover {
+    background-color: #5c33f3;
+}
+form input[type="text"]::placeholder, input[type="email"]::placeholder {
+    color: #e3e4e6b4;
+}
+form textarea {
+    padding-left: 10px;
+    padding-top: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: #461cdf;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+form textarea:hover {background-color: #5c33f3;}
+form textarea::placeholder {color: #e3e4e6b4;}
+form input[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 19px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    background-color: #7f5ef5;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+form input[type="submit"]:hover {background-color: #967bf7;}
 
-/* Media queries */
-
-@media screen and (max-width: 670px){
-    header nav {display: none;}
-    header button {display: block;}
-    header {justify-content: space-between;}
-    header a {margin-left: 20px;}
-    header button {margin-right: 30px;}
+.socials button {
+    font-size: 1.6rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #4d58fc;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: all 0.2s;
 }
-@media screen and (max-width: 466px) {
-    main .apresentation p {font-size: 2.8rem;}
-    main .apresentation span {font-size: 2.8rem;}
-    main {padding-left: 35px;padding-right: 35px;}
-}
-@media screen and (max-width: 348px) {main {padding-left: 25px;padding-right: 25px;}}
-@media screen and (max-width: 266px) {
-    main .apresentation p {font-size: 2.1rem;}
-    main .apresentation span {font-size: 2.1rem;}
+.socials a {text-decoration: none;}
+.socials button:hover {
+    color: #E3E4E6;
 }
 
 /* Mobile Menu */
@@ -199,3 +214,23 @@ footer {
     }
 }
 /* ---------- */
+
+/* Media queries */
+
+@media screen and (max-width: 670px){
+    header nav {display: none;}
+    header button {display: block;}
+    header {justify-content: space-between;}
+    header a {margin-left: 20px;}
+    header button {margin-right: 30px;}
+}
+@media screen and (max-width: 898px) {form {width: 65%;}}
+@media screen and (max-width: 680px) {form {width: 75%;}}
+@media screen and (max-width: 596px) {
+    main {padding-left: 45px;padding-right: 45px;}
+    form {width: 85%;}
+}
+@media screen and (max-width: 466px) {
+    main {padding-left: 25px;padding-right: 25px;}
+    form {width: 100%;}
+}

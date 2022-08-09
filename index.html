@@ -4,15 +4,296 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./styles/Home/images/icons8-v-33.png" type="image/x-icon">
+    <meta name="description" content="Portifólio de Desenvolvedor Front-end">
+    <meta name="keywords" content="HTML,CSS,JavaScript,Portifólio,Front-end,Developer">
+    <meta name="author" content="Vinícius Kauã LINKEDIN = (https://www.linkedin.com/in/viniciusdev/)">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./styles/Home/Home.css">
-    <title>Vinícius | Manutenção</title>
+    <link rel="stylesheet" href="./styles/Works/Woks.css">
+    <link rel="stylesheet" href="./styles/About/About.css">
+    <title>Portifólio Vinícius</title>
 </head>
 <body>
-    <div>
-        <h1>Página em Manutenção ⚙</h1>
-        <img src="./styles/Home/images/Manutenção-Preventiva-2.jpg" alt="Manutenção"
-        width="150px" draggable="false">
-        <p>No momento está página está em manutenção.</p>
+    <header>
+        <a href="index.html" draggable="false">
+            <img src="./styles/Home/images/Logo.png" alt="Logo"
+            width="90px" height="90px" draggable="false">
+        </a>
+            <nav>
+                <ul>
+                    <li><a href="#Home" class="active">HOME</a></li>
+                    <li><a href="#WorkContainer">WORKS</a></li>
+                    <li><a href="#Aboutme">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <button id="OpenMenu"><i class="bi bi-list"></i></button>
+    </header>
+
+    <div class="MobileMenu" id="menuMobile">
+        <nav>
+            <ul>
+                <button id="CloseMenu"><i class="bi bi-x-lg"></i></button>
+                <li><a href="index.html" id="link1">HOME</a></li>
+                <li><a href="index.html#WorkContainer" id="link2">WORKS</a></li>
+                <li><a href="index.html#Aboutme" id="link3">ABOUT</a></li>
+                <li><a href="contact.html" class="active" id="link4">CONTACT</a></li>
+            </ul>
+        </nav>
     </div>
+
+    <main>
+        <!--- Home page -->
+        <div class="apresentation" id="Home">
+            <p>Hi!, I'm Vinícius Kauã,</p>
+            <span>your Front-end Developer.</span>
+            <a href="#WorkContainer" draggable="false">
+                <img src="./styles/Home/images/chevron-down.png" alt="Scroll Down"
+                draggable="false">
+            </a>
+        </div>
+        <!-- Fim da Home page -->
+<!----------------------------------------------------------------------------------->
+        <!-- Work Page -->
+        <div class="workContainer" id="WorkContainer">
+            <div class="title"><h3>Selected <span>Works</span></h3></div>
+            
+            <div class="containerWorksContent">
+                <div class="imageWork">
+                    <img src="./styles/Home/images/Work1.png" alt="Work1"
+                    width="100%" height="320px" draggable="false">
+                </div>
+                <div class="descriptionContainer">
+                    <h3>Portfolio</h4>
+                    <p>Personal portfolio project,<br>
+                        used <span>html, css and javascript</span>, website template from a 
+                        figma project.<br>
+                        Fully responsive</p>
+                    <span>Active website</span>
+                    <a href="https://elisangelaaugusto.vercel.app/" target="_blank" draggable="false">
+                        <button>VIEW WORK<i class="bi bi-chevron-right"></i></button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="containerWorksContentReverse">
+                <div class="imageWork">
+                    <img src="./styles/Home/images/Work2.png" alt="Work2"
+                    width="100%" height="320px" draggable="false">
+                </div>
+                <div class="descriptionContainer">
+                    <h3>Begin session</h4>
+                    <p>First personal login project,<br>
+                        used <span>html, css and javascript</span>, website template,  
+                        from steam login page.<br>
+                        Responsive</p>
+                    <span>Active website</span>
+                    <a href="https://viniznn777.github.io/LoginOnSteam/" target="_blank" draggable="false">
+                        <button>VIEW WORK<i class="bi bi-chevron-right"></i></button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="containerWorksContent">
+                <div class="imageWork">
+                    <img src="./styles/Home/images/Work3.png" alt="Work3"
+                    width="100%" height="320px" draggable="false">
+                </div>
+                <div class="descriptionContainer">
+                    <h3>Login Page</h4>
+                    <p>Personal Login project,<br>
+                        used <span>html, css and javascript</span>, dark mode option and  
+                        registration page.<br>
+                        Fully responsive</p>
+                    <span>Active website</span>
+                    <a href="https://viniznn777.github.io/LoginLanding/" target="_blank" draggable="false">
+                        <button>VIEW WORK<i class="bi bi-chevron-right"></i></button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="containerWorksContentReverse">
+                <div class="imageWork">
+                    <img src="./styles/Home/images/Work4.png" alt="Work4"
+                    width="100%" height="320px" draggable="false">
+                </div>
+                <div class="descriptionContainer">
+                    <h3>Zip code search</h4>
+                    <p>Working with API,<br>
+                        used <span>html, css, javascript and axios</span>, API that brings information  
+                        from a given zip code. Another version with React.js on GitHub<br>
+                        Responsive</p>
+                    <span>Active website</span>
+                    <a href="https://viniznn777.github.io/BuscadorDeCep/" target="_blank" draggable="false">
+                        <button>VIEW WORK<i class="bi bi-chevron-right"></i></button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="containerWorksContent">
+                <div class="imageWork">
+                    <img src="./styles/Home/images/Work5.png" alt="Work5"
+                    width="100%" height="320px" draggable="false">
+                </div>
+                <div class="descriptionContainer">
+                    <h3>This portfolio</h4>
+                    <p>Project, my portfolio,<br>
+                        used <span>html, css, javascript and bootstrap</span>, dark mode option and  
+                        particles.js.<br>
+                        Fully responsive</p>
+                    <span>Active website</span>
+                    <a href="#Home" draggable="false">
+                        <button>IN THE PROJECT<i class="bi bi-chevron-right"></i></button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <!-- Fim da Work Page -->
+<!----------------------------------------------------------------------------------->
+        <!-- About Me -->
+        <div class="AboutMe" id="Aboutme">
+            <div class="descriptionAbout">
+                <h3>A BIT ABOUT ME</h3>
+                <p>I'm a Junior Front End Developer, <br>
+                    Currently studying <span>Systems Analysis and Development</span>. <br>
+                    I love programming and everything that involves digital experiences, some games, music and coding.
+                    </p>
+                
+            </div>
+            <div class="imgMe">
+                <img src="./styles/Home/images/Vinicius.jpeg" alt="Vinícius Image"
+                width="50%" height="300px" draggable="false">
+            </div>
+        </div>
+        <!-- Fim da About Me -->
+
+    </main>
+    <!-- Footer -->
+    <footer>
+        <h5>Created by @viniciuskauandev</h5>
+    </footer>
+    <!-- Fim do Footer -->
+
+    <!-- Particles JavaScript -->
+    <div id="particles-js"></div>
+
+    <script src="NavBar.js"></script>
+    <script src="particles.min.js"></script>
+    <script>
+        particlesJS(
+            {
+    "particles": {
+        "number": {
+            "value": 75,
+            "density": {
+                "enable": true,
+                "value_area": 800
+    }
+    },
+    "color": {
+        "value": "#5f18e1"
+    },
+    "shape": {
+        "type": "circle",
+        "stroke": {
+        "width": 0,
+        "color": "#000000"
+        },
+        "polygon": {
+        "nb_sides": 5
+        },
+        "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+        }
+    },
+    "opacity": {
+        "value": 0.5,
+        "random": false,
+        "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+        }
+    },
+    "size": {
+        "value": 3,
+        "random": true,
+        "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+        }
+    },
+    "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#a7a2f7",
+        "opacity": 0.4,
+        "width": 1
+    },
+    "move": {
+        "enable": true,
+        "speed": 6,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false,
+        "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+        }
+    }
+    },
+    "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+        "onhover": {
+        "enable": true,
+        "mode": "repulse"
+        },
+        "onclick": {
+        "enable": false,
+        "mode": "push"
+        },
+        "resize": true
+    },
+    "modes": {
+        "grab": {
+        "distance": 400,
+        "line_linked": {
+            "opacity": 1
+        }
+        },
+        "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+        },
+        "repulse": {
+        "distance": 200,
+        "duration": 0.4
+        },
+        "push": {
+        "particles_nb": 4
+        },
+        "remove": {
+        "particles_nb": 2
+        }
+    }
+    },
+    "retina_detect": true
+}
+        )
+    </script>
 </body>
 </html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./styles/Home/images/icons8-v-33.png" type="image/x-icon">
+    <meta name="description" content="Portifólio de Desenvolvedor Front-end">
+    <meta name="keywords" content="HTML,CSS,JavaScript,Portifólio,Front-end,Developer">
+    <meta name="author" content="Vinícius Kauã LINKEDIN = (https://www.linkedin.com/in/viniciusdev/)">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./styles/Contact-me/Contact.css">
+
+    <title>Vinícius | Contact-me</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" draggable="false">
+            <img src="./styles/Home/images/Logo.png" alt="Logo"
+            width="90px" height="90px" draggable="false">
+        </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html#WorkContainer">WORKS</a></li>
+                    <li><a href="index.html#Aboutme">ABOUT</a></li>
+                    <li><a href="contact.html" class="active">CONTACT</a></li>
+                </ul>
+            </nav>
+            <button id="OpenMenu"><i class="bi bi-list"></i></button>
+    </header>
+
+    <div class="MobileMenu" id="menuMobile">
+        <nav>
+            <ul>
+                <button id="CloseMenu"><i class="bi bi-x-lg"></i></button>
+                <li><a href="index.html" id="link1">HOME</a></li>
+                <li><a href="index.html#WorkContainer" id="link2">WORKS</a></li>
+                <li><a href="index.html#Aboutme" id="link3">ABOUT</a></li>
+                <li><a href="contact.html" class="active" id="link4">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <form action="https://api.staticforms.xyz/submit" method="post" onsubmit="Success()">
+            <input type="hidden" name="accessKey" value="673e1650-6efa-440e-9b67-6a9b981cade0">
+            <input type="hidden" name="redirectTo" value="https://viniciuskaua.vercel.app">
+
+            <h2>Contact-me</h2>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required placeholder="Name"
+            data-aos="fade-right">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required placeholder="Your Email"
+            data-aos="fade-left">
+
+            <textarea name="message" id="message" cols="30" rows="5" required
+            placeholder="Write a message..."
+            data-aos="flip-right"></textarea>
+            <input type="submit" value="Send Email"data-aos="fade-right">
+        </form>
+        <div class="socials">
+            <a href="https://www.instagram.com/viniciuskauandev/">
+                <button><i class="bi bi-instagram"></i></button>
+            </a>
+            <a href="https://www.linkedin.com/in/viniciusdev/">
+                <button><i class="bi bi-linkedin"></i></button>
+            </a>
+            <a href="https://github.com/viniznn777">
+                <button><i class="bi bi-github"></i></button>
+            </a>
+        </div>
+    </main>
+
+
+
+    <!-- Particles JavaScript -->
+    <div id="particles-js"></div>
+
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <script src="message.js"></script>
+    <script src="particles.min.js"></script>
+    <script src="NavBar.js"></script>
+    <script>
+        particlesJS(
+            {
+    "particles": {
+        "number": {
+            "value": 75,
+            "density": {
+                "enable": true,
+                "value_area": 800
+    }
+    },
+    "color": {
+        "value": "#5f18e1"
+    },
+    "shape": {
+        "type": "circle",
+        "stroke": {
+        "width": 0,
+        "color": "#000000"
+        },
+        "polygon": {
+        "nb_sides": 5
+        },
+        "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+        }
+    },
+    "opacity": {
+        "value": 0.5,
+        "random": false,
+        "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+        }
+    },
+    "size": {
+        "value": 3,
+        "random": true,
+        "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+        }
+    },
+    "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#a7a2f7",
+        "opacity": 0.4,
+        "width": 1
+    },
+    "move": {
+        "enable": true,
+        "speed": 6,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false,
+        "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+        }
+    }
+    },
+    "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+        "onhover": {
+        "enable": true,
+        "mode": "repulse"
+        },
+        "onclick": {
+        "enable": false,
+        "mode": "push"
+        },
+        "resize": true
+    },
+    "modes": {
+        "grab": {
+        "distance": 400,
+        "line_linked": {
+            "opacity": 1
+        }
+        },
+        "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+        },
+        "repulse": {
+        "distance": 200,
+        "duration": 0.4
+        },
+        "push": {
+        "particles_nb": 4
+        },
+        "remove": {
+        "particles_nb": 2
+        }
+    }
+    },
+    "retina_detect": true
+}
+        )
+    </script>
+</body>
+</html>

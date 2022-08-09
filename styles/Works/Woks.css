@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.workContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {margin-top: 100px; width: 100%; margin-bottom: 60px;}
+.title h3 {color: #2a20bd;}
+.title span {color: #ffffff;}
+
+.containerWorksContent {
+    width: 100%;
+    height: 320px;
+    display: flex;
+    margin-bottom: 80px;
+}
+.descriptionContainer a {width: max-content;}
+
+.imageWork {width: 45%;height: 100%;}
+.imageWork img {border-radius: 30px;}
+
+.descriptionContainer {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 19px;
+    gap: 20px;
+}
+.descriptionContainer h3 {font-size: 1.3rem;color: #E3E4E6;margin-top: 38px;}
+.descriptionContainer p {
+    font-size: 1.5rem;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 200;
+    color: #E3E4E6;
+}
+.descriptionContainer span {font-weight: bold; color: #ffffff;}
+.descriptionContainer button {
+    padding: 0.8rem 1.5rem;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 20px;
+    border: 2px solid #E3E4E6;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.4s;
+}
+.descriptionContainer button:hover {
+    background-color: #E3E4E6;
+    color: #2a20bd;
+}
+
+/* Work reverse */
+.containerWorksContentReverse {
+    width: 100%;
+    height: 320px;
+    display: flex;
+    margin-bottom: 80px;
+    flex-direction: row-reverse;
+}
+
+.containerWorksContentReverse button {
+    padding: 0.8rem 1.5rem;
+    background-color: #2a20bd;
+    color: #ffffff;
+    border-radius: 20px;
+    border: 2px solid #E3E4E6;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.4s;
+}
+.containerWorksContentReverse button:hover {
+    background-color: #E3E4E6;
+    color: #2a20bd;
+}
+/* Work reverse fim */
+
+/* Media queries */
+
+@media screen and (max-width: 670px) {
+    .containerWorksContent {flex-wrap: wrap;height: 100%;}
+    .containerWorksContentReverse {flex-wrap: wrap;height: 100%;}
+    .imageWork {width: 100%;}
+    .descriptionContainer {width: 100%;}
+}
+@media screen and (max-width: 466px) {.imageWork img {height: 220px;}}
+@media screen and (max-width: 348px) {
+    .descriptionContainer p {font-size: 1.1rem;}
+    .imageWork img {height: 200px;}
+}
+@media screen and (max-width: 266px) {
+    .imageWork img {height: 160px;}
+    .containerWorksContent button {
+        padding: 0.5rem 1.1rem;
+    }
+}
