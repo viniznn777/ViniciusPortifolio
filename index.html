@@ -8,6 +8,7 @@
     <meta name="description" content="Portifólio de Desenvolvedor Front-end">
     <meta name="keywords" content="HTML,CSS,JavaScript,Portifólio,Front-end,Developer">
     <meta name="author" content="Vinícius Kauã LINKEDIN = (https://www.linkedin.com/in/viniciusdev/)">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./styles/Home/Home.css">
     <link rel="stylesheet" href="./styles/Works/Woks.css">
@@ -35,10 +36,10 @@
         <nav>
             <ul>
                 <button id="CloseMenu"><i class="bi bi-x-lg"></i></button>
-                <li><a href="index.html" id="link1">HOME</a></li>
+                <li><a href="index.html" id="link1" class="active">HOME</a></li>
                 <li><a href="index.html#WorkContainer" id="link2">WORKS</a></li>
                 <li><a href="index.html#Aboutme" id="link3">ABOUT</a></li>
-                <li><a href="contact.html" class="active" id="link4">CONTACT</a></li>
+                <li><a href="contact.html" id="link4">CONTACT</a></li>
             </ul>
         </nav>
     </div>
@@ -60,11 +61,12 @@
             <div class="title"><h3>Selected <span>Works</span></h3></div>
             
             <div class="containerWorksContent">
-                <div class="imageWork">
+                <div class="imageWork" data-aos="fade-right">
                     <img src="./styles/Home/images/Work1.png" alt="Work1"
                     width="100%" height="320px" draggable="false">
                 </div>
-                <div class="descriptionContainer">
+                <div class="descriptionContainer" data-aos="fade-left"
+                data-aos-duration="1000">
                     <h3>Portfolio</h4>
                     <p>Personal portfolio project,<br>
                         used <span>html, css and javascript</span>, website template from a 
@@ -80,9 +82,10 @@
             <div class="containerWorksContentReverse">
                 <div class="imageWork">
                     <img src="./styles/Home/images/Work2.png" alt="Work2"
-                    width="100%" height="320px" draggable="false">
+                    width="100%" height="320px" draggable="false" data-aos="fade-left">
                 </div>
-                <div class="descriptionContainer">
+                <div class="descriptionContainer" data-aos="fade-right"
+                data-aos-duration="1000">
                     <h3>Begin session</h4>
                     <p>First personal login project,<br>
                         used <span>html, css and javascript</span>, website template,  
@@ -98,9 +101,10 @@
             <div class="containerWorksContent">
                 <div class="imageWork">
                     <img src="./styles/Home/images/Work3.png" alt="Work3"
-                    width="100%" height="320px" draggable="false">
+                    width="100%" height="320px" draggable="false" data-aos="fade-right">
                 </div>
-                <div class="descriptionContainer">
+                <div class="descriptionContainer" data-aos="fade-left"
+                data-aos-duration="1000">
                     <h3>Login Page</h4>
                     <p>Personal Login project,<br>
                         used <span>html, css and javascript</span>, dark mode option and  
@@ -116,9 +120,10 @@
             <div class="containerWorksContentReverse">
                 <div class="imageWork">
                     <img src="./styles/Home/images/Work4.png" alt="Work4"
-                    width="100%" height="320px" draggable="false">
+                    width="100%" height="320px" draggable="false" data-aos="fade-left">
                 </div>
-                <div class="descriptionContainer">
+                <div class="descriptionContainer" data-aos="fade-right"
+                data-aos-duration="1000">
                     <h3>Zip code search</h4>
                     <p>Working with API,<br>
                         used <span>html, css, javascript and axios</span>, API that brings information  
@@ -134,9 +139,10 @@
             <div class="containerWorksContent">
                 <div class="imageWork">
                     <img src="./styles/Home/images/Work5.png" alt="Work5"
-                    width="100%" height="320px" draggable="false">
+                    width="100%" height="320px" draggable="false" data-aos="fade-right">
                 </div>
-                <div class="descriptionContainer">
+                <div class="descriptionContainer" data-aos="fade-left"
+                data-aos-duration="1000">
                     <h3>This portfolio</h4>
                     <p>Project, my portfolio,<br>
                         used <span>html, css, javascript and bootstrap</span>, dark mode option and  
@@ -154,7 +160,7 @@
 <!----------------------------------------------------------------------------------->
         <!-- About Me -->
         <div class="AboutMe" id="Aboutme">
-            <div class="descriptionAbout">
+            <div class="descriptionAbout" data-aos="fade-right">
                 <h3>A BIT ABOUT ME</h3>
                 <p>I'm a Junior Front End Developer, <br>
                     Currently studying <span>Systems Analysis and Development</span>. <br>
@@ -162,7 +168,9 @@
                     </p>
                 
             </div>
-            <div class="imgMe">
+            <div class="imgMe" data-aos="flip-right"
+            data-aos-easing="linear"
+            data-aos-duration="1200">
                 <img src="./styles/Home/images/Vinicius.jpeg" alt="Vinícius Image"
                 width="50%" height="300px" draggable="false">
             </div>
@@ -181,6 +189,10 @@
 
     <script src="NavBar.js"></script>
     <script src="particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script>
         particlesJS(
             {
