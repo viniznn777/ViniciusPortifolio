@@ -6,7 +6,7 @@ link3 = document.getElementById('link3'), link4 = document.getElementById('link4
 let NavBarOpen = false
 
 window.addEventListener('resize', () => {
-    if (window.innerWidth > 670) {
+    if (window.innerWidth > 670 || NavBarOpen) {
         closeMenuMobile();
     };
 });
