@@ -46,7 +46,8 @@
     font-weight: 200;
     color: #E3E4E6;
 }
-.descriptionContainer span {font-weight: bold; color: #ffffff;}
+.descriptionContainer span {font-weight: bold; color: #2a20bd;}
+.descriptionContainer .activeWeb {font-weight: bold; color: #05b82c;}
 .descriptionContainer button {
     padding: 0.8rem 1.5rem;
     background-color: transparent;

@@ -32,6 +32,7 @@ html {scroll-behavior: smooth;}
     height: 100%;
     top: 0;
     z-index: -1;
+    transition: all 0.3s;
 }
 
 
@@ -93,6 +94,17 @@ main > .apresentation {
     align-items: center;
     justify-content: center;
     overflow-y: hidden;
+    position: relative;
+}
+
+.apresentation button {
+    position: absolute;
+    top: 0;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: #2a20bd;
+    border: none;
+    cursor: pointer;
 }
 
 /* Scroll Down  ===== */
@@ -115,6 +127,23 @@ main > .apresentation {
 
 main > .apresentation p {color: #2a20bd;font-size: 3.2rem;text-align: center;}
 main > .apresentation span {color: #ffffff;font-size: 3.5rem;text-align: center;}
+
+#topButton {
+    position: absolute;
+    color: #2a20bd;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 30px;
+    margin-right: 28px;
+    font-size: 2.4rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: fixed;
+    opacity: 0;
+    z-index: 5;
+    transition: all 0.3s;
+}
 
 footer {
     width: 100%;
@@ -200,3 +229,7 @@ footer {
     }
 }
 /* ---------- */
+
+/* LIGHT */
+#particles-js.LightMode{background-color:#E3E4E6}main.LightMode .apresentation p{color:#2a20bd}main.LightMode .apresentation span{color:#110b5f}main.LightMode p{color:#070d1a}main.LightMode .descriptionAbout span{color:#2a20bd}main.LightMode .descriptionAbout h3{color:#110b5f}main.LightMode .descriptionContainer button{color:#06051d;border:2px solid #010208}main.LightMode .workContainer .title span{color:#070d1a}header.LightMode nav ul li a{color:#2b13b1}header.LightMode nav ul li a:hover{color:#BC3CD8}footer.LightMode h5{color:#110b5f}
+/* ------- */
