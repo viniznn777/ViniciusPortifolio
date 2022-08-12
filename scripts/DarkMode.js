@@ -39,7 +39,7 @@ loadTheme();
 
 button.addEventListener('click', function() {
     LightMode();
-    window.navigator.vibrate(400);
+    window.navigator.vibrate(200);
     localStorage.removeItem('Light');
 
     if (icon.classList.contains('fa-sun')) {
