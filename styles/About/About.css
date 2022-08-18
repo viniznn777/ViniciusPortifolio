@@ -1,53 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
 }
 
 .AboutMe {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    margin-bottom: 50px;
-    margin-top: 100px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 100px;
 }
 
 .descriptionAbout {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 30px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
 }
-.descriptionAbout h3 {color: #E3E4E6;}
-.descriptionAbout p {color: #E3E4E6;font-weight: 200;font-size: 1.5rem;}
-.descriptionAbout span {color: #ffffff;font-weight: bold;}
+.descriptionAbout h3 {
+  color: #e3e4e6;
+}
+.descriptionAbout p {
+  color: #e3e4e6;
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+.descriptionAbout span {
+  color: #ffffff;
+  font-weight: bold;
+}
 
 .imgMe {
-    width: 50%;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 50%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.imgMe img {border-radius: 50%;}
+.imgMe img {
+  border-radius: 50%;
+}
 
 /* Media queries */
 
 @media screen and (max-width: 670px) {
-    .AboutMe {flex-direction: column;}
-    .descriptionAbout {order: 2;width: 100%;}
-    .imgMe {width: 100%;margin-bottom: 60px;}
+  .AboutMe {
+    flex-direction: column;
+  }
+  .descriptionAbout {
+    order: 2;
+    width: 100%;
+  }
+  .imgMe {
+    width: 100%;
+    margin-bottom: 60px;
+  }
 }
-@media screen and (max-width: 466px) {.imgMe img {height: 230px;}}
+@media screen and (max-width: 466px) {
+  .imgMe img {
+    height: 230px;
+  }
+}
 @media screen and (max-width: 348px) {
-    .imgMe img {height: 200px;}
-    .descriptionAbout p {font-size: 1.1rem;}
+  .imgMe img {
+    height: 200px;
+  }
+  .descriptionAbout p {
+    font-size: 1.1rem;
+  }
 }
-@media screen and (max-width: 266px) {.imgMe img {height: 170px;}}
+@media screen and (max-width: 266px) {
+  .imgMe img {
+    height: 170px;
+  }
+}
