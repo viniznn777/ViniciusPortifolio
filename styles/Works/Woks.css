@@ -38,6 +38,8 @@
 }
 
 .imageWork {
+  max-width: 662px;
+  max-height: 662px;
   width: 45%;
   height: 100%;
 }

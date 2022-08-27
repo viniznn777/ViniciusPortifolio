@@ -103,6 +103,7 @@ form {
   display: flex;
   flex-direction: column;
   width: 55%;
+  max-width: 671px;
 }
 form h2 {
   font-size: 1.9rem;
