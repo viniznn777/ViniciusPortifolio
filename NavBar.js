@@ -25,10 +25,11 @@ function openMenuMobile() {
   menuMobile.style.animationName = "OpenMenu";
 }
 
+let links = document.getElementsByClassName("links");
+
+for (let i = 0; i < links.length; i++) {
+  links[i].addEventListener("click", closeMenuMobile);
+}
+
 buttonOpen.addEventListener("click", openMenuMobile);
 buttonClose.addEventListener("click", closeMenuMobile);
-
-link1.addEventListener("click", closeMenuMobile);
-link2.addEventListener("click", closeMenuMobile);
-link3.addEventListener("click", closeMenuMobile);
-link4.addEventListener("click", closeMenuMobile);
